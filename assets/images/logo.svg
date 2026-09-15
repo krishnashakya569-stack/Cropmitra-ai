@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="badgeSphere" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#4a9d78"/>
+      <stop offset="45%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#173d2c"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="15%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#95e6b3"/>
+      <stop offset="35%" stop-color="#52b788"/>
+      <stop offset="75%" stop-color="#1b4332"/>
+      <stop offset="100%" stop-color="#0d2818"/>
+    </linearGradient>
+    <linearGradient id="leafShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lensGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5fff8"/>
+      <stop offset="55%" stop-color="#d8f3dc"/>
+      <stop offset="100%" stop-color="#95d5b2"/>
+    </linearGradient>
+    <linearGradient id="ringMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#d8f3dc"/>
+      <stop offset="100%" stop-color="#74c69d"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0a1f14" flood-opacity="0.45"/>
+    </filter>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0a1f14" flood-opacity="0.5"/>
+    </filter>
+    <clipPath id="leafClip">
+      <path d="M256 118 C190 118 146 168 146 240 C146 320 200 372 256 400 C256 306 256 212 256 118 Z"/>
+    </clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#badgeSphere)" filter="url(#dropShadow)"/>
+  <circle cx="256" cy="256" r="240" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="3"/>
+  <circle cx="256" cy="256" r="228" fill="none" stroke="#0a1f14" stroke-opacity="0.35" stroke-width="6"/>
+  <ellipse cx="220" cy="150" rx="170" ry="90" fill="#ffffff" opacity="0.10"/>
+  <g filter="url(#softShadow)">
+    <path d="M256 108 C182 108 132 164 132 240 C132 328 194 384 256 414 C256 312 256 210 256 108 Z" fill="url(#leafGrad)"/>
+    <path d="M256 108 C330 108 380 164 380 240 C380 328 318 384 256 414 C256 312 256 210 256 108 Z" fill="url(#leafGrad)" opacity="0.92"/>
+    <path d="M256 130 L256 402" stroke="#0d2818" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M256 170 L214 148 M256 170 L298 148 M256 220 L206 198 M256 220 L306 198 M256 270 L214 250 M256 270 L298 250 M256 320 L222 302 M256 320 L290 302" stroke="#0d2818" stroke-width="3" stroke-linecap="round" opacity="0.35" fill="none"/>
+    <path d="M180 150 C170 220 180 300 220 360 C190 300 175 220 190 150 Z" fill="url(#leafShine)" clip-path="url(#leafClip)"/>
+  </g>
+  <circle cx="300" cy="210" r="18" fill="#3a1a0a" opacity="0.6"/>
+  <circle cx="300" cy="210" r="18" fill="none" stroke="#ff8a3d" stroke-width="5"/>
+  <circle cx="300" cy="210" r="18" fill="none" stroke="#ffd7a8" stroke-width="1.5" opacity="0.6"/>
+  <g filter="url(#softShadow)">
+    <circle cx="336" cy="330" r="62" fill="url(#ringMetal)"/>
+    <circle cx="336" cy="330" r="48" fill="url(#lensGlass)"/>
+    <circle cx="336" cy="330" r="48" fill="none" stroke="#1b4332" stroke-opacity="0.25" stroke-width="2"/>
+    <ellipse cx="318" cy="312" rx="16" ry="9" fill="#ffffff" opacity="0.75"/>
+    <path d="M312 330 L328 346 L360 308" fill="none" stroke="#1b4332" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="376" y="374" width="24" height="72" rx="12" transform="rotate(45 388 410)" fill="url(#ringMetal)"/>
+  </g>
+</svg>

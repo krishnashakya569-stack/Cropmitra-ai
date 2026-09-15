@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="groundGradF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a5a2e"/><stop offset="100%" stop-color="#4a3216"/>
+    </linearGradient>
+    <radialGradient id="groundShadowF" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/><stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rootGradF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d9c39a"/><stop offset="100%" stop-color="#8a6a3e"/>
+    </linearGradient>
+    <linearGradient id="stalkGradF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4d6b1c"/><stop offset="30%" stop-color="#d4e8a8"/><stop offset="55%" stop-color="#8fb339"/><stop offset="100%" stop-color="#3e5416"/>
+    </linearGradient>
+    <linearGradient id="nodeGradF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3e5416"/><stop offset="50%" stop-color="#75943a"/><stop offset="100%" stop-color="#2f4010"/>
+    </linearGradient>
+    <linearGradient id="leafGradFa" x1="10%" y1="0%" x2="95%" y2="90%">
+      <stop offset="0%" stop-color="#a8e6c3"/><stop offset="35%" stop-color="#52b788"/><stop offset="75%" stop-color="#1b4332"/><stop offset="100%" stop-color="#0d2818"/>
+    </linearGradient>
+    <linearGradient id="leafGradFb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8fd4ab"/><stop offset="50%" stop-color="#2D6A4F"/><stop offset="100%" stop-color="#0d2818"/>
+    </linearGradient>
+    <linearGradient id="iphoneFrameF" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8b2a6"/><stop offset="10%" stop-color="#efeae0"/><stop offset="28%" stop-color="#5a564e"/><stop offset="72%" stop-color="#3a3733"/><stop offset="90%" stop-color="#d8d2c4"/><stop offset="100%" stop-color="#8a8478"/>
+    </linearGradient>
+    <linearGradient id="iphoneBackF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2b28"/><stop offset="100%" stop-color="#050504"/>
+    </linearGradient>
+    <linearGradient id="screenGlowF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#eafff2"/><stop offset="55%" stop-color="#b7e8ca"/><stop offset="100%" stop-color="#6fbf92"/>
+    </linearGradient>
+    <linearGradient id="lensGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7fa8ff"/><stop offset="45%" stop-color="#0a0a0b"/><stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="lensShineF" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassShineF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/><stop offset="30%" stop-color="#ffffff" stop-opacity="0.1"/><stop offset="31%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="screenLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#95e6b3"/><stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+    <filter id="dropBlurF" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0a1f14" flood-opacity="0.5"/>
+    </filter>
+    <filter id="phoneBlurF" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="2" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <clipPath id="screenClipF"><rect x="123" y="48" width="50" height="102" rx="10"/></clipPath>
+    <clipPath id="frameClipF"><rect x="115" y="30" width="66" height="138" rx="20"/></clipPath>
+  </defs>
+  <ellipse cx="100" cy="184" rx="85" ry="9" fill="url(#groundShadowF)"/>
+  <path d="M0 178 C30 168 60 172 90 176 C120 180 150 170 200 176 L200 200 L0 200 Z" fill="url(#groundGradF)"/>
+  <g stroke="url(#rootGradF)" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M64 176 C58 184 52 186 44 190" stroke-width="2.6"/>
+    <path d="M64 176 C64 186 62 190 64 196" stroke-width="2.8"/>
+    <path d="M64 176 C70 184 76 186 84 190" stroke-width="2.6"/>
+  </g>
+  <g filter="url(#dropBlurF)">
+    <rect x="58" y="46" width="12" height="132" rx="5" fill="url(#stalkGradF)"/>
+    <rect x="56" y="64" width="16" height="5" rx="2.5" fill="url(#nodeGradF)"/>
+    <rect x="56" y="90" width="16" height="5" rx="2.5" fill="url(#nodeGradF)"/>
+    <rect x="56" y="116" width="16" height="5" rx="2.5" fill="url(#nodeGradF)"/>
+    <rect x="56" y="142" width="16" height="5" rx="2.5" fill="url(#nodeGradF)"/>
+    <rect x="56" y="164" width="16" height="5" rx="2.5" fill="url(#nodeGradF)"/>
+  </g>
+  <g filter="url(#dropBlurF)">
+    <path d="M64 48 C64 20 68 -4 82 -18 C90 6 84 32 66 48 Z" fill="url(#leafGradFa)"/>
+    <path d="M64 48 C44 40 20 44 4 60 C22 62 46 60 64 50 Z" fill="url(#leafGradFb)"/>
+    <path d="M64 48 C84 42 106 46 120 62 C102 64 80 62 64 50 Z" fill="url(#leafGradFa)" opacity="0.94"/>
+  </g>
+  <path d="M65 46 L79 -14 M64 49 L8 58 M64 49 L116 60" stroke="#0d2818" stroke-width="1.3" opacity="0.4" fill="none"/>
+  <circle cx="26" cy="54" r="5" fill="#3a1a0a" opacity="0.55"/>
+  <circle cx="26" cy="54" r="5" fill="none" stroke="#ff8a3d" stroke-width="2.2"/>
+  <circle cx="26" cy="54" r="5" fill="none" stroke="#ffd7a8" stroke-width="0.7" opacity="0.6"/>
+  <g transform="rotate(11 148 100)" filter="url(#phoneBlurF)">
+    <rect x="115" y="30" width="66" height="138" rx="20" fill="url(#iphoneFrameF)"/>
+    <rect x="118" y="33" width="60" height="132" rx="17" fill="url(#iphoneBackF)"/>
+    <g clip-path="url(#frameClipF)">
+      <rect x="122" y="37" width="30" height="30" rx="9" fill="#1c1c1e"/>
+      <circle cx="130" cy="45" r="5.6" fill="url(#lensGradF)"/>
+      <circle cx="130" cy="45" r="5.6" fill="url(#lensShineF)"/>
+      <circle cx="144" cy="45" r="5.6" fill="url(#lensGradF)"/>
+      <circle cx="144" cy="45" r="5.6" fill="url(#lensShineF)"/>
+      <circle cx="130" cy="59" r="5.6" fill="url(#lensGradF)"/>
+      <circle cx="137" cy="52" r="2" fill="#2c2c2e"/>
+    </g>
+    <rect x="123" y="48" width="50" height="102" rx="10" fill="url(#screenGlowF)"/>
+    <g clip-path="url(#screenClipF)">
+      <path d="M148 145 C132 120 126 90 140 62 C150 62 158 66 162 74 C170 100 164 126 148 145 Z" fill="url(#screenLeafGrad)"/>
+      <path d="M148 145 L146 68" stroke="#0d2818" stroke-width="2" opacity="0.5"/>
+      <path d="M147 90 L134 82 M147 105 L133 100 M148 120 L136 118 M147 78 L158 72 M148 95 L160 92 M148 110 L159 110" stroke="#0d2818" stroke-width="1" opacity="0.35" fill="none"/>
+      <ellipse cx="149" cy="98" rx="9" ry="7" fill="#c96a2f" opacity="0.5"/>
+      <circle cx="149" cy="98" r="12" fill="none" stroke="#ff8a3d" stroke-width="2.6"/>
+      <circle cx="149" cy="98" r="12" fill="none" stroke="#ffd7a8" stroke-width="0.8" opacity="0.7"/>
+      <rect x="138" y="52" width="20" height="6" rx="3" fill="#0a0a0b"/>
+      <path d="M130 66 L130 60 L136 60 M160 60 L166 60 L166 66 M130 138 L130 144 L136 144 M160 144 L166 144 L166 138" fill="none" stroke="#1b4332" stroke-width="2.2" stroke-linecap="round"/>
+      <rect x="123" y="80" width="50" height="6" fill="#ffb703" opacity="0.55"/>
+    </g>
+    <rect x="112" y="58" width="3" height="18" rx="1.5" fill="#c7c2b6"/>
+    <rect x="112" y="84" width="3" height="12" rx="1.5" fill="#c7c2b6"/>
+    <rect x="181" y="70" width="3" height="26" rx="1.5" fill="#c7c2b6"/>
+    <path d="M123 48 L145 48 L127 150 L123 150 Z" fill="url(#glassShineF)"/>
+  </g>
+</svg>
